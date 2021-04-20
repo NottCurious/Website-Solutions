@@ -21,4 +21,4 @@ As of April 20th, the following number of solutions have been completed:
 | Geometry              |     0/7      |
 | Advanced Techniques   |     0/24     |
 | Additional Problems   |     0/77     |
-| **Total**             |  **156/300**  |
+| **Total**             |   **0/300**  |
