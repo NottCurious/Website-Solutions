@@ -1,4 +1,4 @@
-# All Old Files Got Deleted By My Stupidity, Going To Try and Fix Everything
+# All Old Files Got Deleted By My Idiocy, Going To Try and Fix Everything
 
 ### Codeforces - Continuing on Old Account, Old Solutions Won't Be Public Unless I retry the Question for Practice
 
@@ -6,12 +6,12 @@
 
 ### CSES Solutions
 
-As of May 5th, the following number of solutions have been completed:
+As of May 13th, the following number of solutions have been completed:
 
 | Problem Type          | Number Solved |  Percentage |
 |-----------------------|:-------------:|:-----------:|
-| Introductory Problems |     18/19     |    94.7%    |
-| Sorting and Searching |     0/35      |     0%      |
+| Introductory Problems |     19/19     |    100%     |
+| Sorting and Searching |     2/35      |    5.71%    |
 | Dynamic Programming   |     0/19      |     0%      |
 | Graph Algorithms      |     0/36      |     0%      |
 | Range Queries         |     0/19      |     0%      |
@@ -21,4 +21,4 @@ As of May 5th, the following number of solutions have been completed:
 | Geometry              |     0/7       |     0%      |
 | Advanced Techniques   |     0/24      |     0%      |
 | Additional Problems   |     0/77      |     0%      |
-| **Total**             |  **18/300**   |     6%      |
+| **Total**             |  **21/300**   |     7%      |
