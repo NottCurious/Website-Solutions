@@ -18,7 +18,7 @@ As of June 12th, the following number of solutions have been completed:
 | Tree Algorithms       |     0/16      |     0%      |
 | Mathematics           |     0/31      |     0%      |
 | String Algorithms     |     0/17      |     0%      |
-| Geometry              |     0/7       |     0%      |
+| Geometry              |     7/7       |    100%     |
 | Advanced Techniques   |     0/24      |     0%      |
 | Additional Problems   |     0/77      |     0%      |
-| **Total**             |  **54/300**   |     18%     |
+| **Total**             |  **61/300**   |   20.33%    |
