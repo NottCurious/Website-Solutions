@@ -6,12 +6,12 @@
 
 ### CSES Solutions
 
-As of May 13th, the following number of solutions have been completed:
+As of June 12th, the following number of solutions have been completed:
 
 | Problem Type          | Number Solved |  Percentage |
 |-----------------------|:-------------:|:-----------:|
 | Introductory Problems |     19/19     |    100%     |
-| Sorting and Searching |     2/35      |    5.71%    |
+| Sorting and Searching |     35/35     |    100%     |
 | Dynamic Programming   |     0/19      |     0%      |
 | Graph Algorithms      |     0/36      |     0%      |
 | Range Queries         |     0/19      |     0%      |
@@ -21,4 +21,4 @@ As of May 13th, the following number of solutions have been completed:
 | Geometry              |     0/7       |     0%      |
 | Advanced Techniques   |     0/24      |     0%      |
 | Additional Problems   |     0/77      |     0%      |
-| **Total**             |  **21/300**   |     7%      |
+| **Total**             |  **54/300**   |     18%     |
