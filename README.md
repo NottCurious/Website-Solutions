@@ -8,17 +8,19 @@
 
 As of June 12th, the following number of solutions have been completed:
 
+New Account: NottCuriousTwo
+
 | Problem Type          | Number Solved |  Percentage |
 |-----------------------|:-------------:|:-----------:|
 | Introductory Problems |     19/19     |    100%     |
 | Sorting and Searching |     35/35     |    100%     |
-| Dynamic Programming   |     0/19      |     0%      |
+| Dynamic Programming   |     19/19     |    100%     |
 | Graph Algorithms      |     0/36      |     0%      |
 | Range Queries         |     0/19      |     0%      |
-| Tree Algorithms       |     0/16      |     0%      |
+| Tree Algorithms       |     16/16     |    100%     |
 | Mathematics           |     0/31      |     0%      |
 | String Algorithms     |     0/17      |     0%      |
 | Geometry              |     7/7       |    100%     |
 | Advanced Techniques   |     0/24      |     0%      |
 | Additional Problems   |     0/77      |     0%      |
-| **Total**             |  **61/300**   |   20.33%    |
+| **Total**             |  **96/300**   |     32%     |
