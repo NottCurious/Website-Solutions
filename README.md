@@ -16,11 +16,11 @@ New Account: NottCuriousTwo
 | Sorting and Searching |     35/35     |    100%     |
 | Dynamic Programming   |     19/19     |    100%     |
 | Graph Algorithms      |     0/36      |     0%      |
-| Range Queries         |     7/19      |   36.84%    |
+| Range Queries         |     19/19     |    100%     |
 | Tree Algorithms       |     16/16     |    100%     |
 | Mathematics           |     0/31      |     0%      |
 | String Algorithms     |     0/17      |     0%      |
 | Geometry              |     7/7       |    100%     |
 | Advanced Techniques   |     0/24      |     0%      |
 | Additional Problems   |     0/77      |     0%      |
-| **Total**             |  **103/300**  |   34.33%s    |
+| **Total**             |  **117/300**  |    39.0%    |
