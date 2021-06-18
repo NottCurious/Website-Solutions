@@ -10,7 +10,7 @@ int main() {
 
   cin >> n;
 
-  for(int i = 0; i < n; i++) {
+  for (int i = 0; i < n; i++) {
     cin >> x[i];
   }
 
@@ -18,7 +18,7 @@ int main() {
 
   res = 1;
 
-  for(int i = 0; i < n && x[i] <= res; i++) {
+  for (int i = 0; i < n && x[i] <= res; i++) {
     res += x[i];
   }
 

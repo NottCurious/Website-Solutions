@@ -7,14 +7,14 @@ int main() {
 
   cin >> n >> m;
 
-  for(int i = 0; i < n; i++) {
+  for (int i = 0; i < n; i++) {
     cin >> h;
     prices.insert(-h);
   }
 
-  for(int i = 0; i < m; i++) {
+  for (int i = 0; i < m; i++) {
     cin >> t;
-    if(prices.lower_bound(-t) == prices.end())
+    if (prices.lower_bound(-t) == prices.end())
       cout << "-1\n";
     else {
       cout << -(*prices.lower_bound(-t)) << endl;

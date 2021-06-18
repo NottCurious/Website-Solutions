@@ -9,16 +9,15 @@ int main() {
   cin >> s;
 
   n = strlen(s);
-  sort(s, s+n);
+  sort(s, s + n);
 
   perms.insert(s);
 
-  while(next_permutation(s, s+n))
-    perms.insert(string(s, s+n));
+  while (next_permutation(s, s + n)) perms.insert(string(s, s + n));
 
   cout << perms.size() << endl;
 
-  for(string perm : perms) {
+  for (string perm : perms) {
     cout << perm << endl;
   }
 }

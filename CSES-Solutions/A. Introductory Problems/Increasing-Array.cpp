@@ -11,7 +11,7 @@ int main() {
 
   cin >> n >> mx;
 
-  for(int i = 1; i < n; i++) {
+  for (int i = 1; i < n; i++) {
     cin >> x;
     mx = max(mx, x);
     sum += (mx - x);

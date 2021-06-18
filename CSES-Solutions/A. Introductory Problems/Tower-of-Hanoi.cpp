@@ -2,7 +2,7 @@
 using namespace std;
 
 void move(int from, int to, int depth) {
-  if(depth == 1) {
+  if (depth == 1) {
     cout << from << " " << to << endl;
     return;
   }

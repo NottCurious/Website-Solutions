@@ -6,9 +6,9 @@ int main() {
 
   cin >> t;
 
-  while(t--) {
+  while (t--) {
     cin >> a >> b;
 
-    cout << (((a + b) % 3 != 0 || a > 2 * b || b > 2 * a)? "NO\n" : "YES\n");
+    cout << (((a + b) % 3 != 0 || a > 2 * b || b > 2 * a) ? "NO\n" : "YES\n");
   }
 }

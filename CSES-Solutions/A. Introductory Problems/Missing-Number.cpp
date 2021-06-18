@@ -10,11 +10,11 @@ int main() {
   cin >> n;
   ll sum = 0;
 
-  for(int i = 0; i < n - 1; i++) {
+  for (int i = 0; i < n - 1; i++) {
     ll a = 0;
     cin >> a;
     sum += a;
   }
 
-  cout << ((n*(n + 1)) / 2) - sum;
+  cout << ((n * (n + 1)) / 2) - sum;
 }

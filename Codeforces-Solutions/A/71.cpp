@@ -4,8 +4,7 @@ using namespace std;
 
 int t;
 
-int main()
-{
+int main() {
   cin >> t;
 
   string a[t];
@@ -13,11 +12,11 @@ int main()
 
   int i = 0;
 
-  while(t--) {
+  while (t--) {
     string s;
     cin >> s;
 
-    if(s.size() <= 4) {
+    if (s.size() <= 4) {
       a[i] = s;
       i++;
       continue;
@@ -28,7 +27,7 @@ int main()
     ans[n - s.size()] = s[0] + to_string(n - 2) + s[n - 1] << endl;
   }
 
-  for(int i = 0; i < t; i++) {
+  for (int i = 0; i < t; i++) {
     cout << ans[i] << endl;
   }
 }

@@ -13,40 +13,39 @@ ll dp[19][10][2][2];
 
 // Thanks to ncduy0303 (Github) for this solution
 ll memo(int pos, int pre, bool flag1, bool flag2) {
-	if (pos == (int) num.size()) return 1;
-	if (dp[pos][pre][flag1][flag2] != -1) return dp[pos][pre][flag1][flag2];
-	ll res = 0; int lmt = (flag1) ? 9 : num[pos];
-	for (int i = 0; i <= lmt; i++) {
-		bool nflag1 = flag1 | (i < lmt);
-		bool nflag2 = flag2 | (i > 0);
-		if (i != pre || (!flag2 && i == 0)) res += memo(pos + 1, i, nflag1, nflag2);
-	}
-	return dp[pos][pre][flag1][flag2] = res;
+  if (pos == (int)num.size()) return 1;
+  if (dp[pos][pre][flag1][flag2] != -1) return dp[pos][pre][flag1][flag2];
+  ll res = 0;
+  int lmt = (flag1) ? 9 : num[pos];
+  for (int i = 0; i <= lmt; i++) {
+    bool nflag1 = flag1 | (i < lmt);
+    bool nflag2 = flag2 | (i > 0);
+    if (i != pre || (!flag2 && i == 0)) res += memo(pos + 1, i, nflag1, nflag2);
+  }
+  return dp[pos][pre][flag1][flag2] = res;
 }
 
 ll calc(ll n) {
-	if (n == -1) return 0;
-	if (n == 0) return 1;
+  if (n == -1) return 0;
+  if (n == 0) return 1;
 
-	num.clear();
+  num.clear();
 
   while (n) {
-		num.push_back(n % 10);
-		n /= 10;
-	}
+    num.push_back(n % 10);
+    n /= 10;
+  }
 
   reverse(num.begin(), num.end());
-	memset(dp, -1, sizeof dp);
+  memset(dp, -1, sizeof dp);
 
   return memo(0, 0, 0, 0);
 }
 
 void solve() {
-    ll a, b;
-    cin >> a >> b;
-	  cout << calc(b) - calc(a - 1) << "\n";
+  ll a, b;
+  cin >> a >> b;
+  cout << calc(b) - calc(a - 1) << "\n";
 }
 
-int main() {
-  solve();
-}
+int main() { solve(); }

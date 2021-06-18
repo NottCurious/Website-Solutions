@@ -11,7 +11,7 @@ ll median, sum;
 int main() {
   cin >> n;
 
-  for(int i = 0; i < n; i++) {
+  for (int i = 0; i < n; i++) {
     cin >> p[i];
   }
 
@@ -19,7 +19,7 @@ int main() {
 
   median = p[(n - 1) / 2];
 
-  for(int i = 0; i < n; i++) {
+  for (int i = 0; i < n; i++) {
     sum += abs(p[i] - median);
   }
 

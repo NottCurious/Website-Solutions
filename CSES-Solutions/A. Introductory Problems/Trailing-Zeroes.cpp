@@ -5,7 +5,7 @@ int main() {
   int n, ans;
   cin >> n;
 
-  while(n > 0) {
+  while (n > 0) {
     n /= 5;
     ans += n;
   }

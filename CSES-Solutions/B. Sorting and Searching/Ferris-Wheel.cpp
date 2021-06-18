@@ -8,7 +8,7 @@ int main() {
 
   cin >> n >> x;
 
-  for(int i = 0; i < n; i++) {
+  for (int i = 0; i < n; i++) {
     cin >> p[i];
   }
 
@@ -16,8 +16,8 @@ int main() {
 
   l = 0;
 
-  for(int i = n - 1; i >= l; i--) {
-    if(p[l] + p[i] <= x) {
+  for (int i = n - 1; i >= l; i--) {
+    if (p[l] + p[i] <= x) {
       l++;
     }
     ans++;

@@ -9,7 +9,7 @@ void solve() {
 
   ll pos = 0, len = 1, p10 = 1;
 
-  while(pos < n) {
+  while (pos < n) {
     pos += len * p10 * 9;
     len++;
     p10 *= 10;
@@ -28,7 +28,7 @@ int main() {
   int t;
   cin >> t;
 
-  while(t--) {
+  while (t--) {
     solve();
   }
 }

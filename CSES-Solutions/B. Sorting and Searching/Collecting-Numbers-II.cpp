@@ -29,10 +29,9 @@ int main() {
   }
   pos[n + 1] = n + 1;
 
-  cnt = 0; 
+  cnt = 0;
   for (int i = 1, ptr; i <= n; i++) {
-    if (ptr > pos[i])
-      cnt++;
+    if (ptr > pos[i]) cnt++;
     ptr = pos[i];
   }
 

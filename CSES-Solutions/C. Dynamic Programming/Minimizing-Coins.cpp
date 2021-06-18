@@ -10,12 +10,11 @@ int main() {
 
   fill(dp + 1, dp + x + 1, INT_MAX);
 
-  for(int i = 0; i < n; i++) {
+  for (int i = 0; i < n; i++) {
     cin >> c;
 
-    for(int j = 0; j <= x - c; j++)
-      if(dp[j] != INT_MAX)
-        dp[j + c] = min(dp[j + c], dp[j] + 1);
+    for (int j = 0; j <= x - c; j++)
+      if (dp[j] != INT_MAX) dp[j + c] = min(dp[j + c], dp[j] + 1);
   }
 
   cout << (dp[x] == INT_MAX ? -1 : dp[x]);

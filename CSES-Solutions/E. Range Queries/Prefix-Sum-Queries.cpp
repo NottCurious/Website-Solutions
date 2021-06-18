@@ -3,7 +3,7 @@ using namespace std;
 
 #define ll long long
 
-typedef pair<ll,ll> pll;
+typedef pair<ll, ll> pll;
 
 const int mxN = 2e5 + 1;
 const int SIZE = 4 * mxN;
@@ -11,54 +11,56 @@ const int SIZE = 4 * mxN;
 int n, q, lo[SIZE], hi[SIZE], mp[mxN];
 ll sum[SIZE], pre[SIZE];
 
-void pull(int i){
-    pre[i] = max(pre[2 * i], sum[2 * i] + pre[2 * i + 1]);
-    sum[i] = sum[2 * i]  +  sum[2 * i + 1];
+void pull(int i) {
+  pre[i] = max(pre[2 * i], sum[2 * i] + pre[2 * i + 1]);
+  sum[i] = sum[2 * i] + sum[2 * i + 1];
 }
 
-void init(int i, int l, int r){
-    lo[i] = l; hi[i] = r;
-    if(l == r){
-        cin >> sum[i];
-        pre[i] = max(0LL, sum[i]);
-        mp[l] = i;
-        return;
-    }
-    int m = (l + r)/2;
-    init(2 * i, l, m);
-    init(2 * i + 1, m + 1, r);
-    pull(i);
-}
-
-void update(int idx, int val){
-    int i = mp[idx];
-    sum[i] = val;
+void init(int i, int l, int r) {
+  lo[i] = l;
+  hi[i] = r;
+  if (l == r) {
+    cin >> sum[i];
     pre[i] = max(0LL, sum[i]);
+    mp[l] = i;
+    return;
+  }
+  int m = (l + r) / 2;
+  init(2 * i, l, m);
+  init(2 * i + 1, m + 1, r);
+  pull(i);
+}
 
+void update(int idx, int val) {
+  int i = mp[idx];
+  sum[i] = val;
+  pre[i] = max(0LL, sum[i]);
+
+  i >>= 1;
+  while (i) {
+    pull(i);
     i >>= 1;
-    while(i){
-        pull(i);
-        i >>= 1;
-    }
+  }
 }
 
-pll query(int i, int l, int r){
-    if(l > hi[i] || r < lo[i])      return {0, 0};
-    if(l <= lo[i] && hi[i] <= r)    return {pre[i], sum[i]};
+pll query(int i, int l, int r) {
+  if (l > hi[i] || r < lo[i]) return {0, 0};
+  if (l <= lo[i] && hi[i] <= r) return {pre[i], sum[i]};
 
-    pll left = query(2 * i, l, r);
-    pll right = query(2 * i + 1, l, r);
-    return {max(left.first, left.second + right.first), left.second + right.second};
+  pll left = query(2 * i, l, r);
+  pll right = query(2 * i + 1, l, r);
+  return {max(left.first, left.second + right.first),
+          left.second + right.second};
 }
 
-int main(){
-    cin >> n >> q;
-    init(1, 1, n);
-    for(int i = 0, t, a, b; i < q; i++){
-        cin >> t >> a >> b;
-        if(t == 1)
-            update(a, b);
-        else if(t == 2)
-            cout << query(1, a, b).first << endl;
-    }
+int main() {
+  cin >> n >> q;
+  init(1, 1, n);
+  for (int i = 0, t, a, b; i < q; i++) {
+    cin >> t >> a >> b;
+    if (t == 1)
+      update(a, b);
+    else if (t == 2)
+      cout << query(1, a, b).first << endl;
+  }
 }

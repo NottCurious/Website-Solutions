@@ -2,19 +2,18 @@
 #include <string>
 using namespace std;
 
-int main()
-{
+int main() {
   int t;
   cin >> t;
 
   string a[t];
   int i = 0;
 
-  while(t--) {
+  while (t--) {
     string s;
     cin >> s;
 
-    if(s.size() <= 4) {
+    if (s.size() <= 4) {
       a[i] = s;
       i++;
       continue;

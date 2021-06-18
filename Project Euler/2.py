@@ -1,11 +1,6 @@
-
-
 def findFibonacciNumbers():
-    num = []
-    old = 0
-    new = 1
-    temp = old + new;
-    while temp < 4000000:
+     num = [] old = 0 new = 1 temp = old + new;
+while temp < 4000000:
         num.append(temp)
         old = new
         new = temp
@@ -24,4 +19,4 @@ def findSum(nums):
 
 fib = findFibonacciNumbers()
 findSum(fib)
-# print(fib)
+#print(fib)
