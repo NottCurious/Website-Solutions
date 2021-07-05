@@ -25,5 +25,6 @@ int main() {
     G[b].push_back(a);
   }
   dfs();
+
   cout << cnt << endl;
 }
