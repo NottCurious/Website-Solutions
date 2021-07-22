@@ -1,8 +1,24 @@
-# All Old Files Got Deleted By My Idiocy, Going To Try and Fix Everything
+## Solution from the Following Website
+* Codeforces
+* Project Euler
+* CSES Problemset
+* Exercism
+* Python Principles
+* Codechef
+* Codingame
+* Codewars
 
-### Codeforces - Continuing on Old Account, Old Solutions Won't Be Public Unless I retry the Question for Practice
+## Links
+* [Codeforces](codeforces.com)
+* [Project Euler](https://projecteuler.net/)
+* [CSES Problemset](cses.fi/problemset)
+* [Exercism](https://exercism.io/)
+* [Python Principles](https://pythonprinciples.com/challenges/)
+* [Codechef](https://www.codechef.com/)
+* [Codingame](https://www.codingame.com/)
+* [Codewars](https://www.codewars.com/)
 
-### Project Euler - I'll Probably Be Doing all The Questions from the Beginning Again
+#### By Deepesh Nimma
 
 ### CSES Solutions
 
