@@ -13,7 +13,7 @@ int main() {
 	cin.tie(NULL);
 
 	int t = 1;
-	// cin >> t;
+	cin >> t;
 
 	while(t--) {
 		solve();
@@ -27,18 +27,24 @@ int main() {
 
 void solve() {
 	string s;
+	vector<char> vc;
 	cin >> s;
+	int n = s.size();
 
 	for(int i = 0; i < n; i++) {
-		
+		if(!checkVector(vc, s[i]))
+			vc.push_back(s[i]);
 	}
+
+	cout << ((vc.size() % 2 == 0)? "CHAT WITH HER!" : "IGNORE HIM!");
 }
 
 bool checkVector(vector<char> vc, char c) {
 	for(char oldchar : vc) {
 		if(oldchar == c)
-			return false;
+			return true;
 	}
 
-	return true;
+	return false;
 }
+
