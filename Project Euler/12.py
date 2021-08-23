@@ -1,5 +1,6 @@
 n = 1
 
+
 def countDivisors(num):
     num = int(num * (num + 1) / 2)
     print(num)
@@ -15,8 +16,10 @@ def countDivisors(num):
             ns.append(int(quo))
 
     return len(ns)
+
+
 while countDivisors(n) <= 500:
     n += 1
 
-print('\n' + str(int(n * (n + 1) / 2)))
+print("\n" + str(int(n * (n + 1) / 2)))
 print(n)

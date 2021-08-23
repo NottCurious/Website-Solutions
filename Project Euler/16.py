@@ -1,4 +1,6 @@
 import time
+
+
 def sum_of_digits(num: int):
     sum = 0
     num_string = str(num)
@@ -8,6 +10,7 @@ def sum_of_digits(num: int):
         sum += int(i)
 
     return sum
+
 
 # print(2 ** 1000)
 print(sum_of_digits(2 ** 1000))

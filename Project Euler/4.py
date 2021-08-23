@@ -5,6 +5,7 @@ def checkPalindrome(s):
 
     return True
 
+
 largest = 0
 
 for i in range(100, 1000):

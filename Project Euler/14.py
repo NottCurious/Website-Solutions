@@ -20,8 +20,9 @@ def sol():
             largest = input
             pre = counter
 
-        print('Currently on {}, Largest: {}'.format(input, largest), end='\r')
+        print("Currently on {}, Largest: {}".format(input, largest), end="\r")
 
     return largest
+
 
 print(sol())
